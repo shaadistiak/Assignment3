@@ -1,0 +1,333 @@
+<!DOCTYPE html >
+<html lang="en" Data-theme="light">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokeys</title>
+     <!--tailwind and daisy ui cdn  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!--custom styles--->
+     <!--Tailwind custom colors-->
+     <script>
+         tailwind.config = {
+           theme: {
+             extend: {
+               colors: {
+                 clifford: '#da373d',
+                 'bike-prim':'#E76F51',
+                 'bike-prim-bg':'rgba(231, 111, 81, 0.10)',
+               }
+             }
+           }
+         }
+       </script>
+       <!--Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <style>
+    .fonts-poppins{
+        font-family: 'poppins',sans-serif;
+    }
+    .custom-ticket-btn {
+      display: inline-flex;
+      padding: 15px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: #FF4240;
+      color: white;
+      font-weight: bold;
+    }
+    .custom-slider-img {
+      width: 1170px;
+      height: 550px;
+      flex-shrink: 0;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    .slider-container {
+      margin-left: 100px;
+      margin-right: 120px;
+    
+      margin-top: 40px;
+    }
+    
+    .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius:16px;
+    }
+ </style>
+     
+</head>
+<body>
+    <header>
+        <nav class="bg-white shadow-md slider-container">
+            <div class="container mx-auto px-4 flex justify-between items-center py-4">
+              <div class="text-2xl font-bold">
+                <a href="#" class="text-black">Hockey<span class="text-red-500">'</span>s</a>
+              </div>
+              <ul class="hidden md:flex space-x-6 text-lg font-semibold">
+                <li><a href="#" class="text-red-500">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <a href="#" class=" btn custom-ticket-btn">Get Ticket</a>
+            </div>
+          </nav>
+        
+          <!-- Slider -->
+          <div class="relative  slider-container">
+         
+            <div class="carousel w-full">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="/Hokeys/B9A3-Hockeys-main/Images/1.png" class="w-full h-96 object-cover" class="custom-slider-img" alt="Slider Image" />
+                
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+  
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto px-4 py-10 mt-10">
+            <div class="text-center mb-8">
+              <h2 class="text-3xl font-bold">Professional Hockey's Club</h2>
+              <p class="text-md mt-2">A professional hockey club is an organized team that competes at the highest level of ice hockey, often in leagues like the NHL.</p>
+            </div>
+            
+            <!-- Circular Progress Bars -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-1 text-center">
+              
+              <!-- Progress 1 -->
+              <div>
+                <div class="radial-progress text-red-500" style="--value:87; --size:120px; --thickness:10px;">87%</div>
+                <h3 class="text-lg font-semibold mt-4">Prayer Facility</h3>
+                <p class="text-sm text-gray-500 mt-2">A prayer facility is a designated space for individuals.</p>
+              </div>
+        
+              <!-- Progress 2 -->
+              <div>
+                <div class="radial-progress text-green-500" style="--value:95; --size:120px; --thickness:10px;">95%</div>
+                <h3 class="text-lg font-semibold mt-4">Experienced Coach</h3>
+                <p class="text-sm text-gray-500 mt-2">An experienced coach brings valuable knowledge, leadership, and strategic expertise.</p>
+              </div>
+        
+              <!-- Progress 3 -->
+              <div>
+                <div class="radial-progress text-yellow-500" style="--value:90; --size:120px; --thickness:10px;">90%</div>
+                <h3 class="text-lg font-semibold mt-4">Senior Player</h3>
+                <p class="text-sm text-gray-500 mt-2">A senior player provides mentorship and leadership on the training ground.</p>
+              </div>
+        
+              <!-- Progress 4 -->
+              <div>
+                <div class="radial-progress text-blue-500" style="--value:80; --size:120px; --thickness:10px;">80%</div>
+                <h3 class="text-lg font-semibold mt-4">Training Ground</h3>
+                <p class="text-sm text-gray-500 mt-2">A training ground is a dedicated facility where athletes practice, develop skills.</p>
+              </div>
+        
+            </div>
+          </section>
+         <section class="container mx-auto  p-6 mt-10 ">
+          <!-- Program Sections Title -->
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold">Program Sections</h2>
+            <p class="text-gray-500">The Program Sections offer tailored training paths for different age groups <br>and skill levels, helping participants grow and excel in their respective fields.</p>
+          </div>
+      
+          <!-- Program Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 row-1 gap-4  ">
+            <!-- Junior Program -->
+            <div class="card h-64 bg-cover bg-center relative border-radius- 16px" style="background-image: url('/Hokeys/B9A3-Hockeys-main/Images/2.png');">
+                <!-- Dark Overlay to Improve Text Visibility -->
+                <div class="overlay absolute inset-0"></div>
+                <div class="card-body relative text-white text-left">
+                  <h2 class="card-title text-2xl font-bold">Junior Program</h2>
+                  <p class="mt-2">The Junior Program focuses on building foundational skills and<br> fostering a love for the sport, catering to<br> young athletes in the early stages of their development.
+
+                  </p>
+                  <div class="card-actions justify-letf mt-4">
+                    <button class="btn custom-ticket-btn">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+      
+            <!-- Teenager Program -->
+            <div class="card h-64 bg-cover bg-center relative border-radius- 16px" style="background-image: url('/Hokeys/B9A3-Hockeys-main/Images/3.png');">
+                <!-- Dark Overlay to Improve Text Visibility -->
+                <div class="overlay absolute inset-0"></div>
+                <div class="card-body relative text-white text-left">
+                  <h2 class="card-title text-2xl font-bold">Teenager Program</h2>
+                  <p class="mt-2">The Teenager Program is designed to refine skills,<br> enhance performance, and foster competitive spirit,<br> preparing young athletes for higher levels of play.</p>
+                  <div class="card-actions justify-letf mt-4">
+                    <button class="btn custom-ticket-btn">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+      
+ <!-- Professional Program -->
+ <div class="card bg-base-100 shadow-lg lg:col-span-2 card h-65 bg-cover bg-center relative border-radius- 16px 
+
+ " style="background-image: url('/Hokeys/B9A3-Hockeys-main/Images/4.png');">
+    <!-- Dark Overlay to Improve Text Visibility -->
+    <div class="overlay absolute inset-0"></div>
+    <div class="card-body relative text-white text-left">
+      <h2 class="card-title text-2xl font-bold">Professional Program</h2>
+      <p class="mt-2">The Professional Program is designed to enhance advanced skills <br> and strategies, preparing athletes for high-level competition <br>and professional success.</p>
+      <div class="card-actions justify-letf mt-4">
+        <button class="btn custom-ticket-btn">Register Now!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </section>
+
+       <!-- New Products Section -->
+  <section class="container mx-auto px-4 py-8  ">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold">Our New Products</h2>
+      <p class="text-md mt-2 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus urna in sit nullam proin.</p>
+    </div>
+    
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      
+      <!-- Product Card 1 -->
+      <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src="/Hokeys/B9A3-Hockeys-main/Images/5.png" alt="Product Image" class="w-full h-48 object-cover">
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-bold">World Cup Flags Football</h3>
+          <div class="flex items-center space-x-2 text-yellow-500 my-2">
+            <span>⭐</span> <span>5.0</span> <span>200</span> <span class="text-gray-500">Sold</span>
+          </div>
+          <p class="text-sm text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sit.</p>
+          <p class="text-lg font-bold text-red-500 mt-2">Price: $22.00</p>
+          <p class="text-sm text-gray-500 flex items-center">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_7_227)">
+                <path d="M4 18.9998C4 19.5302 4.21071 20.0389 4.58579 20.414C4.96086 20.789 5.46957 20.9998 6 20.9998C6.53043 20.9998 7.03914 20.789 7.41421 20.414C7.78929 20.0389 8 19.5302 8 18.9998C8 18.4693 7.78929 17.9606 7.41421 17.5855C7.03914 17.2105 6.53043 16.9998 6 16.9998C5.46957 16.9998 4.96086 17.2105 4.58579 17.5855C4.21071 17.9606 4 18.4693 4 18.9998Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16.9998H6V2.99976H4" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 4.99976L20 5.99976L19.284 11.0108M14 12.9998H6" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.121 20.1208C21.5406 19.7013 21.8265 19.1667 21.9423 18.5847C22.0581 18.0028 21.9988 17.3995 21.7717 16.8513C21.5447 16.3031 21.1602 15.8345 20.6668 15.5048C20.1734 15.1751 19.5934 14.9991 19 14.9991C18.4066 14.9991 17.8266 15.1751 17.3332 15.5048C16.8398 15.8345 16.4553 16.3031 16.2283 16.8513C16.0012 17.3995 15.9419 18.0028 16.0577 18.5847C16.1735 19.1667 16.4594 19.7013 16.879 20.1208C17.297 20.5398 18.004 21.1658 19 21.9998C20.051 21.1098 20.759 20.4838 21.121 20.1208Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 17.9998V18.0098" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_7_227">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg></span> Delivery Free
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src="/Hokeys/B9A3-Hockeys-main/Images/6.png" alt="Product Image" class="w-full h-48 object-cover">
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-bold">World Cup Flags Football</h3>
+          <div class="flex items-center space-x-2 text-yellow-500 my-2">
+            <span>⭐</span> <span>5.0</span> <span>200</span> <span class="text-gray-500">Sold</span>
+          </div>
+          <p class="text-sm text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sit.</p>
+          <p class="text-lg font-bold text-red-500 mt-2">Price: $22.00</p>
+          <p class="text-sm text-gray-500 flex items-center">
+            <span>✅</span> Delivery Free
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src="/Hokeys/B9A3-Hockeys-main/Images/7.png" alt="Product Image" class="w-full h-48 object-cover">
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-bold">Cap For Hockeys</h3>
+          <div class="flex items-center space-x-2 text-yellow-500 my-2">
+            <span>⭐</span> <span>5.0</span> <span>200</span> <span class="text-gray-500">Sold</span>
+          </div>
+          <p class="text-sm text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sit.</p>
+          <p class="text-lg font-bold text-red-500 mt-2">Price: $22.00</p>
+          <p class="text-sm text-gray-500 flex items-center">
+            <span>✅</span> Delivery Free
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src="/Hokeys/B9A3-Hockeys-main/Images/8.png" alt="Product Image" class="w-full h-48 object-cover">
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-bold">World Cup Flags Football</h3>
+          <div class="flex items-center space-x-2 text-yellow-500 my-2">
+            <span>⭐</span> <span>5.0</span> <span>200</span> <span class="text-gray-500">Sold</span>
+          </div>
+          <p class="text-sm text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sit.</p>
+          <p class="text-lg font-bold text-red-500 mt-2">Price: $22.00</p>
+          <p class="text-sm text-gray-500 flex items-center">
+            <span>✅</span> Delivery Free
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src="/Hokeys/B9A3-Hockeys-main/Images/9.png" alt="Product Image" class="w-full h-48 object-cover">
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-bold">World Cup Flags Football</h3>
+          <div class="flex items-center space-x-2 text-yellow-500 my-2">
+            <span>⭐</span> <span>5.0</span> <span>200</span> <span class="text-gray-500">Sold</span>
+          </div>
+          <p class="text-sm text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sit.</p>
+          <p class="text-lg font-bold text-red-500 mt-2">Price: $22.00</p>
+          <p class="text-sm text-gray-500 flex items-center">
+            <span>✅</span> Delivery Free
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src="/Hokeys/B9A3-Hockeys-main/Images/10.png" alt="Product Image" class="w-full h-48 object-cover">
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-bold">World Cup Flags Football</h3>
+          <div class="flex items-center space-x-2 text-yellow-500 my-2">
+            <span>⭐</span> <span>5.0</span> <span>200</span> <span class="text-gray-500">Sold</span>
+          </div>
+          <p class="text-sm text-gray-500">Dolor sit amet consectetur. Ut urna diam quis sit.</p>
+          <p class="text-lg font-bold text-red-500 mt-2">Price: $22.00</p>
+          <p class="text-sm text-gray-500 flex items-center">
+            <span>✅</span> Delivery Free
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+         
+    </main>
+    <footer></footer>
+</body>
+</html>
